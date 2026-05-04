@@ -82,7 +82,7 @@ class Board:
     def render(self) -> str:
         def cell(i: int) -> str:
             v = self._cells[i]
-            return v.value if v is not None else " "
+            return v.value if v is not None else str(i + 1)
 
         return (
             f" {cell(6)} | {cell(7)} | {cell(8)}\n"
