@@ -32,8 +32,10 @@ Enter moves using a numpad layout:
  1 | 2 | 3
 ```
 
-You can choose whether you, the AI, or a coin flip moves first. The
-first player plays X; the second plays O.
+You can choose to play against the AI or pass-and-play with another
+human at the same terminal. In versus-AI mode you also pick whether
+you, the AI, or a coin flip moves first. The first player plays X;
+the second plays O. Type `q` at any prompt to quit.
 
 ## How it works
 
