@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from functools import lru_cache
+from functools import cache
 
 from .engine import Board, GameStatus, Player
 
@@ -26,7 +26,7 @@ def find_best_move(board: Board) -> int:
     return best_move
 
 
-@lru_cache(maxsize=None)
+@cache
 def _score(board: Board) -> int:
     """Negamax score from the perspective of ``board.current_player``.
 

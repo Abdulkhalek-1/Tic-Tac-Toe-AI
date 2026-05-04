@@ -24,7 +24,7 @@ python -m tic_tac_toe
 
 Enter moves using a numpad layout:
 
-```
+```text
  7 | 8 | 9
 -----------
  4 | 5 | 6
@@ -40,12 +40,12 @@ first player plays X; the second plays O.
 The AI evaluates every reachable game state with **minimax** in negamax
 form: assume both players play optimally, and pick the move that leads
 to the best guaranteed outcome. Because the `Board` is immutable and
-hashable, the recursion can be memoized with `functools.lru_cache`, so
+hashable, the recursion can be memoized with `functools.cache`, so
 the full search runs instantly.
 
 ## Project layout
 
-```
+```text
 src/tic_tac_toe/
 ├── engine.py    # Board, Player, GameStatus — pure game state
 ├── ai.py        # find_best_move — pure function
