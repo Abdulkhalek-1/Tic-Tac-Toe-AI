@@ -10,3 +10,4 @@ venv/
 .ruff_cache/
 .idea/
 .vscode/
+uv.lock
