@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tic-tac-toe-ai"
+version = "0.1.0"
+description = "Unbeatable Tic-Tac-Toe AI using minimax."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Abdulkhalek Muhammad" }]
+
+[project.scripts]
+tic-tac-toe = "tic_tac_toe.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tic_tac_toe"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+strict = true
+python_version = "3.10"
+files = ["src/tic_tac_toe"]
